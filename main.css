@@ -2,6 +2,10 @@
     box-sizing: border-box;
   }
   
+  html {
+    position: relative;
+    min-height: 100%;
+  }
 
   body {
     font-family: "Courier New"; 
@@ -17,11 +21,39 @@
     background-color: #aaa;
   }
 
+
+  main::after {
+      content: '';
+      display: block;
+      height: 40px;
+  }
+
+  footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+  }
+
+
   a {
       padding: 2%;
   }
+
+  .link {
+      background-color: #89c4f4;
+      padding: 0%;
+      padding-left: 1%;
+      padding-right: 1%;
+  }
+
+  .links {
+      width: 100%;
+      background-color: #89c4f4
+  }
+
   a:link, a:visited {
     text-decoration: none;
+    color: #98fb98;
   }
 
     a:hover, a:active {
@@ -38,7 +70,17 @@
     width: 100%;
   }
   
-  
+  .initials {
+    color: #89c4f4;
+  }
+
+  .hidden {
+    display: none; 
+}
+
+  button {
+      background-color: #98fb98
+  }
   
   header {
     padding-top: 12%;
@@ -49,14 +91,20 @@
       margin: 0;
   }
 
-  
-  .contactButton, .projectButton {
-    background-color: #aaa;
-    margin: 6% 4%;
+  .bioSection {
+    padding-bottom: 2%;
+  }
+
+  .contactSection {
+      padding-top: 6%;
   }
 
   .selfie, .projectScreen {
       max-width: 375px;
+  }
+
+  .projectScreen {
+      padding-top: 2%;
   }
 
   .icon-bar {
@@ -64,11 +112,91 @@
       display:block;
       width: 22px;
       height: 2px;
-      background-color: white;
+      background-color: #89c4f4;
   }
 
   .hamburgerMenu {
       position: absolute;
-      right: 10px;
+      right: 25px;
+      padding-bottom: 1%;
+      border-width: 1px;
+      border-radius: 2px;
+      border-color: #89c4f4
   }
 
+
+  @media screen and (min-width: 760px) {
+    .bioBox {
+    display: flex;
+    }
+
+    main::after {
+        height: 0px;
+    }
+    .bioSection {
+        padding-top: 12%;
+        padding-right: 50px;
+    }
+
+    header {
+        padding-top: 12%;
+        min-width: 50%;
+    }
+
+    h2 {
+        margin: 30px;
+    }
+
+    .projectScreen {
+        width: 90%;
+        max-width: 1024px;
+    }
+
+    main {
+        padding-bottom: 75px;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .initials {
+        position: absolute;
+        left: 20px;
+    }
+
+    .hidden {
+        display: block; 
+    }
+
+}
+
+
+@media screen and (min-width: 1025px) {
+    .selfie {
+        max-width: 520px;
+    }
+
+    .bioSection > p {
+        padding-top: 10%;
+        padding-right: 50px;
+    }
+
+    .projectScreen {
+        padding-bottom: 2%;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+    .projectScreen {
+        width: 90%;
+        max-width: 2048px;
+    }
+    
+    .quizDescription {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+}
