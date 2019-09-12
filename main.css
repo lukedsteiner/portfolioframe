@@ -18,7 +18,7 @@
   nav,
   footer {
     padding: 1% 0;
-    background-color: #aaa;
+    background-color:black;
   }
 
 
@@ -32,6 +32,7 @@
       position: absolute;
       bottom: 0;
       width: 100%;
+      color: #98fb98;
   }
 
 
@@ -87,20 +88,32 @@
     padding-bottom: 2%;
   }
 
+  section {
+      height: 100vh;
+  }
+  
   h2, h3 {
       margin: 0;
   }
 
   .bioSection {
-    padding-bottom: 2%;
+    margin-bottom: 30%;
   }
 
   .contactSection {
       padding-top: 6%;
   }
 
+  #contact, #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
   .selfie, .projectScreen {
       max-width: 375px;
+      width: 100%;
   }
 
   .projectScreen {
@@ -135,7 +148,8 @@
     }
     .bioSection {
         padding-top: 12%;
-        padding-right: 50px;
+        padding-left: 15px;
+        padding-right: 25px;
     }
 
     header {

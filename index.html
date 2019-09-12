@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav role="navigation"><span class="initials">LS</span>
+    <nav><span class="initials">LS</span>
         <button type="button" class="hamburgerMenu" aria-pressed=false>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -19,32 +19,33 @@
             <a href="#contact" class="contact">Contact</a>
         </div>
     </nav>
-    <main role="main">
+    <main>
     <div class="bioBox" >
-        <header role="banner" id="bio">
+        <header id="bio">
             <h1>Luke Steiner</h1>
             <img class="selfie" alt="Headshot" src="https://i.imgur.com/iyF8yKf.jpg">
         </header>
     <section class="bioSection">
         <h2>Bio:</h2>
-        <p>I am a Technical Training Specialist, with a background in fullstack development. I work primarily with Partners and Developers to educate on this companies tools, how to work them into your fullstack workflow, and how to follow best practices when developing on the platform. </p>
-        <p>When not coding or training, you can find me power lifting, writing/playling/listening to music, or vacationing around the globe!</p>
+        <p>I am a Technical Training Specialist, with a background in full-stack development. I work primarily with Partners and Developers to educate on this companies tools, how to work them into your full-stack workflow, and how to follow best practices when developing on the platform. </p>
+        <p>When not coding or training, you can find me power lifting, writing/playing/listening to music, or vacationing around the globe!</p>
     </section>
     </div>
-    <section class="projectSection" id="projects">
-        <h2>Projects:</h2>
+    <section id="projects">
+        <h2 class="projectSection">Projects:</h2>
         <h3>'The Cure' Quiz App</h3>
         <img class="projectScreen" alt="Screenshot of Quiz App" src="https://i.imgur.com/gMtatQy.png">
-        <p class='quizDescription'>This is a from scratch quiz app, in which I have primarily leveraged jquery to alter the DOM, presenting questions, and matching against an object, sequentially, verifying the correcgt answer is chosen. It also keeps the score, and serves different templates depending on what the outcome of the quiz is.</p> 
+        <p class='quizDescription'>This is a from scratch quiz app, in which I have primarily leveraged jquery to alter the DOM, presenting questions, and matching against an object, sequentially, verifying the correct answer is chosen. It also keeps the score, and serves different templates depending on what the outcome of the quiz is.</p> 
         <p>This app uses JS, jQuery, HTML, and CSS</p>
         <div class="links">
-        <a href="https://lukedsteiner.github.io/wireframe/" target="_blank" class="link">GitHub</a>
-        <a href="https://github.com/lukedsteiner/wireframe/" target="_blank" class="link">Live App</a>
+        <a href="https://lukedsteiner.github.io/wireframe/" target="_blank" class="link">Live App</a>
+        <a href="https://github.com/lukedsteiner/wireframe/" target="_blank" class="link">GitHub</a>
         </div>
         </section>
-    <section class="contactSection" id="contact">
-        <h2>Contact Information</h2>
+    <section id="contact">
+        <h2 class="contactSection">Contact Information</h2>
         <p>If you wish to contact me, feel free to use the links, phone number, or email address below!</p>
+        <p>Email: luke.steiner@example.com</p>
         <p>512-123-4567</p>
         <div class="links">
         <a href="https://www.linkedin.com/in/luke-steiner-1449b8151/" target="_blank" class="link">LinkedIn</a>
@@ -52,8 +53,9 @@
         </div>
      </section>
     </main>
-    <footer role="content-info">Email: luke.steiner@example.com</footer>
+    <footer>&copy; - 2019 - Luke Steiner
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="script.js"></script>
+    </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="script.js"></script>
 </html>
