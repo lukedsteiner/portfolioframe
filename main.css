@@ -32,7 +32,7 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      color: #98fb98;
+      color: #98fb98
   }
 
 
@@ -45,6 +45,11 @@
       padding: 0%;
       padding-left: 1%;
       padding-right: 1%;
+      color: black;
+  }
+
+  .bio, .projects, .contact {
+      color: #98fb98;
   }
 
   .links {
@@ -54,7 +59,6 @@
 
   a:link, a:visited {
     text-decoration: none;
-    color: #98fb98;
   }
 
     a:hover, a:active {
