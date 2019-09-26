@@ -1,0 +1,38 @@
+'use strict';
+
+function getDogImages(breed) {
+  fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error(response.statusText);
+    })
+    .then(responseJson => 
+      displayResults(responseJson))
+    .catch(err => {
+      $('#js-error-message').text(`Something went wrong. Be sure that you are picking an applicable breed: ${err}`);
+    });
+}
+
+function displayResults(responseJson) {
+  let images = responseJson.message;
+  $('.results').removeClass('hidden');
+  $('.results-img').replaceWith(`<img src="${images}" class="results-img">`);
+  console.log(responseJson);
+}
+
+function watchForm() {
+  $('form').submit(event => {
+    event.preventDefault();
+    const breedOfDogs = $('.js-value-input').val().toLowerCase();
+    getDogImages(breedOfDogs);
+    console.log(breedOfDogs);
+  });
+}
+
+$(function() {
+  console.log('App loaded! Waiting for submit!');
+  watchForm();
+});
+

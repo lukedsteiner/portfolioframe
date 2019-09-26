@@ -19,6 +19,7 @@
   footer {
     padding: 1% 0;
     background-color:black;
+    width: 100vw;
   }
 
 
@@ -93,7 +94,7 @@
   }
 
   section {
-      height: 100vh;
+      min-height: 100vh;
   }
   
   h2, h3 {
