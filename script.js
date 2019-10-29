@@ -18,4 +18,4 @@ $('nav').click(function(event) {
 }
 
 $(smoothScroll);
-$(mobileMenu);
+$(mobileMenu); 
